@@ -60,13 +60,13 @@ function eight() {
             const newArray = array2.concat(array1);
             console.log(newArray)
         } else {
-            let a = Math.floor(array.length / 2);
+          /*   let a = Math.floor(array.length / 2);
             let b = a + 1;
             let c = b + 1;
             let d = array.length;
             array1 = array.slice(0, a);
             array1.unshift(array[b]);
-            array2 = array.slice(c, d);
+            array2 = array.slice(c, d); */
             const newArray = array2.concat(array1);
             console.log(newArray)
         }
