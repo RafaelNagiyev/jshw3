@@ -69,7 +69,37 @@ function eight() {
             array2 = array.slice(c, d); */
             const newArray = array2.concat(array1);
             console.log(newArray)
-        }
-    
+        }    
 }
-eight()
+
+function nine() {
+    //bubble sort
+    let array = [5, 9, 8, 14, 6, 50, 7, 8, 10 ]
+        for(var i = 0; i < array.length; i++){        
+          for(var j = 0; j < ( array.length - i -1 ); j++){           
+            if(array[j] > array[j+1]){
+              var temp = array[j]
+              array[j] = array[j + 1]
+              array[j+1] = temp
+            }
+          }
+        }
+        console.log(array);
+       
+}
+
+function ten() {
+    let array = [5, 9, 8, 14, 6, 50, 7, 8, 10 ]
+        for(let i = 0; i < array.length - 1; i++){
+           for(let j = i + 1; j < array.length; j++){
+              if(array[j] > array[i]){
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+              }     
+           }
+        }
+        console.log(array);
+}
+
+ten()
